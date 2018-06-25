@@ -1,6 +1,6 @@
 # 🐍 ARKit Snake 🐍
 
-Quick demo of 3D drawing in [ARKit](https://developer.apple.com/arkit/) using [Metal](https://developer.apple.com/metal/) + [SceneKit](https://developer.apple.com/documentation/scenekit). 
+Quick demo of 3D drawing in [ARKit](https://developer.apple.com/arkit/) using [Metal](https://developer.apple.com/metal/) + [SceneKit](https://developer.apple.com/documentation/scenekit). This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
 
 
 
