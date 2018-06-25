@@ -1,5 +1,12 @@
 # 🐍 ARKit Snake 🐍
 
+
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+
+
 I am learning ARKit and this is my fist quick demo of 3D drawing in [ARKit](https://developer.apple.com/arkit/) using [Metal](https://developer.apple.com/metal/) + [SceneKit](https://developer.apple.com/documentation/scenekit). This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
 
 
