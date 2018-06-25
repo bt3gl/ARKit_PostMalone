@@ -1,3 +1,9 @@
+//
+//  Light.swift
+//  ARSnake
+//
+
+
 import Foundation
 
 struct Light {

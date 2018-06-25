@@ -1,3 +1,8 @@
+//
+//  SCNVector3Extensions.swift
+//  ARSnake
+//
+
 import Foundation
 import SceneKit
 
@@ -225,7 +230,6 @@ func SCNVector3ProjectPlane(vector: SCNVector3, planeNormal: SCNVector3 ) -> SCN
     let projection = SCNVector3Project(vectorToProject: vector, projectionVector: planeNormal)
     
     return ( vector - projection )
-    
     
 }
 

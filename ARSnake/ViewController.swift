@@ -1,5 +1,6 @@
 //
 //  ViewController.swift
+//  ARSnake
 //
 
 import UIKit
@@ -57,10 +58,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         
         // Set the view's delegate
         sceneView.delegate = self
-        
-        // Show statistics such as fps and timing information
-        // This tends to conflict with the rendering
-        //sceneView.showsStatistics = true
+
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/world.scn")!
@@ -69,9 +67,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         sceneView.scene = scene
         
         metalLayer = self.sceneView.layer as! CAMetalLayer
-        
-        
-        //addButton()
         
         //self.view.addGestureRecognizer(UIGestureRecognizer.)
         let tap = UILongPressGestureRecognizer(target: self, action: #selector(tapHandler))
@@ -102,7 +97,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
@@ -132,22 +126,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         // red
         let c1 = UIColor(red: 246.0/255.0, green: 205.0/255.0, blue: 73.0/255.0, alpha: 1.0)
         let c2 = UIColor(red: 230.0/255.0, green: 98.0/255.0, blue: 87.0/255.0, alpha: 1.0)
-        
-        // greenish
-        //let c1 = UIColor(red: 112.0/255.0, green: 219.0/255.0, blue: 155.0/255.0, alpha: 1.0)
-        //let c2 = UIColor(red: 86.0/255.0, green: 197.0/255.0, blue: 238.0/255.0, alpha: 1.0)
-        
+
         addPointButton = getRoundyButton(size: 60, imageName: "stop", c1, c2)
         //addPointButton.setTitle("+", for: UIControlState.normal)
         
         self.view.addSubview(addPointButton)
-        addPointButton.center = CGPoint.init(x: sw / 2.0, y: 120 )
-        //addPointButton.addTarget(self, action:#selector(self.buttonTouchDown), for: .touchDown)
+        addPointButton.center = CGPoint.init(x: sw / 2.0, y: 120)
         addPointButton.addTarget(self, action:#selector(self.clearDrawing), for: .touchUpInside)
-        //addPointButton.addTarget(self, action:#selector(self.buttonTouchUp), for: .touchUpOutside)
         
     }
-    
     
     
     @objc func clearDrawing() {
@@ -162,19 +149,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         buttonDown = false
     }
     
-    // MARK: - ARSCNViewDelegate
-    
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
-    
-    //var prevTime : TimeInterval = -1
-    
+
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         
         if ( buttonDown ) {
@@ -216,10 +191,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         
         frameIdx = frameIdx + 1
         
-        //if ( frameIdx % 2 == 0 ) {
-            vertBrush.updateBuffers()
-        //}
-        
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didRenderScene scene: SCNScene, atTime time: TimeInterval) {
@@ -240,12 +211,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
                 
             }
         }
-        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
-        
     }
     
     func sessionWasInterrupted(_ session: ARSession) {
@@ -257,8 +226,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
-    
-    // MARK: stuff
     
     func getPointerPosition() -> (pos : SCNVector3, valid: Bool, camPos : SCNVector3 ) {
         
@@ -273,5 +240,4 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         return (currentPosition, true, pointOfView.position)
         
     }
-    
 }
