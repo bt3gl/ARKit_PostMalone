@@ -1,3 +1,9 @@
+//
+//  Vertex.swift
+//  ARSnake
+//
+
+
 
 struct Vertex {
   
