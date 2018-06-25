@@ -1,7 +1,3 @@
-//
-//  float4x4+Extensions.swift
-//  ARSnake
-//
 
 import Foundation
 import simd

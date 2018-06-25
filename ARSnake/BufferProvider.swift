@@ -1,17 +1,13 @@
-//
-//  BufferProvider.swift
-//  ARSnake
-//
-
-
 import UIKit
 import Metal
 import simd
 
 class BufferProvider: NSObject {
-
+  // 1
   let inflightBuffersCount: Int
+  // 2
   fileprivate var uniformsBuffers: [MTLBuffer]
+  // 3
   fileprivate var avaliableBufferIndex: Int = 0
   var avaliableResourcesSemaphore:DispatchSemaphore
   
@@ -41,9 +37,11 @@ class BufferProvider: NSObject {
     let buffer = uniformsBuffers[avaliableBufferIndex]
     let bufferPointer = buffer.contents()
     
+    // 1
     var projectionMatrix = projectionMatrix
     var modelViewMatrix = modelViewMatrix
     
+    // 2
     memcpy(bufferPointer, &modelViewMatrix, MemoryLayout<Float>.size*float4x4.numberOfElements())
     memcpy(bufferPointer + MemoryLayout<Float>.size*float4x4.numberOfElements(), &projectionMatrix, MemoryLayout<Float>.size*float4x4.numberOfElements())
     memcpy(bufferPointer + 2*MemoryLayout<Float>.size*float4x4.numberOfElements(), light.raw(), Light.size())

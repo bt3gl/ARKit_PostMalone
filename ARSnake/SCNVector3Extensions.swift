@@ -1,9 +1,3 @@
-//
-//  SCNVector3Extensions.swift
-//  ARSnake
-//
-
-
 import Foundation
 import SceneKit
 

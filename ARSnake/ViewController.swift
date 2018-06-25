@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  ARSnake
 //
 
 import UIKit
@@ -36,6 +35,7 @@ func getRoundyButton(size: CGFloat = 100,
     return button
     
 }
+
 
 
 class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDelegate {
@@ -102,11 +102,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
         // Run the view's session
-        sceneView.session.run(configuration)        
+        sceneView.session.run(configuration)
+        
+        //vertBrush.setupPipeline(device: sceneView.device!, pixelFormat: self.metalLayer.pixelFormat )
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -129,12 +133,22 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         let c1 = UIColor(red: 246.0/255.0, green: 205.0/255.0, blue: 73.0/255.0, alpha: 1.0)
         let c2 = UIColor(red: 230.0/255.0, green: 98.0/255.0, blue: 87.0/255.0, alpha: 1.0)
         
+        // greenish
+        //let c1 = UIColor(red: 112.0/255.0, green: 219.0/255.0, blue: 155.0/255.0, alpha: 1.0)
+        //let c2 = UIColor(red: 86.0/255.0, green: 197.0/255.0, blue: 238.0/255.0, alpha: 1.0)
+        
         addPointButton = getRoundyButton(size: 60, imageName: "stop", c1, c2)
+        //addPointButton.setTitle("+", for: UIControlState.normal)
         
         self.view.addSubview(addPointButton)
         addPointButton.center = CGPoint.init(x: sw / 2.0, y: 120 )
+        //addPointButton.addTarget(self, action:#selector(self.buttonTouchDown), for: .touchDown)
         addPointButton.addTarget(self, action:#selector(self.clearDrawing), for: .touchUpInside)
+        //addPointButton.addTarget(self, action:#selector(self.buttonTouchUp), for: .touchUpOutside)
+        
     }
+    
+    
     
     @objc func clearDrawing() {
         vertBrush.clear()
@@ -148,6 +162,19 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         buttonDown = false
     }
     
+    // MARK: - ARSCNViewDelegate
+    
+/*
+    // Override to create and configure nodes for anchors added to the view's session.
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        let node = SCNNode()
+     
+        return node
+    }
+*/
+    
+    //var prevTime : TimeInterval = -1
+    
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         
         if ( buttonDown ) {
@@ -157,11 +184,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
                 
                 if ( vertBrush.points.count == 0 || (vertBrush.points.last! - pointer.pos).length() > 0.001 ) {
                     
-                    var radius : Float = 0.001        
+                    var radius : Float = 0.001
+                    
                     
                     if ( splitLine || vertBrush.points.count < 2 ) {
                         lineRadius = 0.001
                     } else {
+                        
                         let i = vertBrush.points.count-1
                         let p1 = vertBrush.points[i]
                         let p2 = vertBrush.points[i-1]
@@ -176,7 +205,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
                     if ( splitLine ) { splitLine = false }
                     
                 }
+                
             }
+            
         }
         
         if ( frameIdx % 100 == 0 ) {
@@ -184,7 +215,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         }
         
         frameIdx = frameIdx + 1
-        vertBrush.updateBuffers()
+        
+        //if ( frameIdx % 2 == 0 ) {
+            vertBrush.updateBuffers()
+        //}
         
     }
     
@@ -206,6 +240,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
                 
             }
         }
+        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
@@ -222,7 +257,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
-
+    
+    // MARK: stuff
+    
     func getPointerPosition() -> (pos : SCNVector3, valid: Bool, camPos : SCNVector3 ) {
         
         guard let pointOfView = sceneView.pointOfView else { return (SCNVector3Zero, false, SCNVector3Zero) }
@@ -230,9 +267,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         
         let mat = SCNMatrix4.init(currentFrame.camera.transform)
         let dir = SCNVector3(-1 * mat.m31, -1 * mat.m32, -1 * mat.m33)
+        
         let currentPosition = pointOfView.position + (dir * 0.12)
         
         return (currentPosition, true, pointOfView.position)
         
     }
+    
 }

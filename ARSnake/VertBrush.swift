@@ -1,8 +1,6 @@
 //
 //  VertBrush.swift
-//  ARSnake
 //
-
 
 
 import Foundation
@@ -16,20 +14,30 @@ class VertBrush {
     
     var vertexBuffer: MTLBuffer! = nil
     var indexBuffer: MTLBuffer! = nil
+    
     var pipelineState: MTLRenderPipelineState! = nil
+    
     var previousSplitLine = false
+    
     var bufferProvider: BufferProvider! = nil
+    
+    
     var vertices = [Vertex]()
     var points = [SCNVector3]()
     var indices = Array<UInt32>()
+    
     var lastVertUpdateIdx = 0
     var lastIndexUpdateIdx = 0
+    
     var prevPerpVec = SCNVector3Zero
+    
+    
     var light = Light(color: (1.0,1.0,1.0), ambientIntensity: 0.1,
                       direction: (0.0, 0.0, 1.0), diffuseIntensity: 0.8,
                       shininess: 10, specularIntensity: 2, time: 0.0)
     
-
+    
+    
     func addPoint( _ point : SCNVector3 , radius : Float = 0.01, splitLine : Bool = false ) {
         
         if ( points.count >= maxPoints ) {
@@ -49,6 +57,8 @@ class VertBrush {
         }
         
         
+        //let green = 0.5 + 0.5*sin( 0.1 * Float(points.count) )
+        
         func toVert(_ pp:SCNVector3, _ nn:SCNVector3 ) -> Vertex {
             return Vertex(x: pp.x, y: pp.y, z: pp.z,
                           r: 1.0, g: 0.5, b: 0.1, a: 1.0,
@@ -57,9 +67,12 @@ class VertBrush {
         }
         
         let pidx = points.count - 1
+        
         let p1 = points[pidx]
         let p2 = points[pidx-1]
+        
         let v1 = p1 - p2
+        
         var v2 = SCNVector3Zero
         
         if ( SCNVector3EqualToVector3(prevPerpVec, SCNVector3Zero) ) {
@@ -93,6 +106,7 @@ class VertBrush {
         }
         
         // add triangles
+        
         let N : UInt32 = UInt32(vertsPerPoint)
         
         for i in 0..<vertsPerPoint {
@@ -121,16 +135,18 @@ class VertBrush {
                 
             }
         }
+        
+        
     }
     
     func updateBuffers() {
-        
         if ( vertices.count == 0 ) {return}
         objc_sync_enter(self)
         updateIndexBuffer()
         updateVertexBuffer()
         objc_sync_exit(self)
     }
+    
     
     func updateVertexBuffer() {
         
@@ -141,7 +157,8 @@ class VertBrush {
         let offset = lastVertUpdateIdx * MemoryLayout<Vertex>.size
         
         memcpy(bufferPointer + offset, &vertices+lastVertUpdateIdx, dataSize)
-        lastVertUpdateIdx = count  
+        lastVertUpdateIdx = count
+        
     }
     
     func updateIndexBuffer() {
@@ -168,6 +185,7 @@ class VertBrush {
                 _ renderEncoder: MTLRenderCommandEncoder,
                  parentModelViewMatrix: float4x4,
                  projectionMatrix: float4x4) {
+        
         
         if ( indices.count == 0 ) {return}
         
@@ -201,8 +219,8 @@ class VertBrush {
         let fragmentProgram = defaultLibrary!.makeFunction(name: "basic_fragment")
         let vertexProgram = defaultLibrary!.makeFunction(name: "basic_vertex")
         
-        let pipelineStateDescriptor = MTLRenderPipelineDescriptor()
         
+        let pipelineStateDescriptor = MTLRenderPipelineDescriptor()
         pipelineStateDescriptor.vertexFunction = vertexProgram
         pipelineStateDescriptor.fragmentFunction = fragmentProgram
         pipelineStateDescriptor.colorAttachments[0].pixelFormat = pixelFormat
@@ -225,5 +243,8 @@ class VertBrush {
         
         self.bufferProvider = BufferProvider(device: device, inflightBuffersCount: 3)
         
+        
     }
+    
+    
 }

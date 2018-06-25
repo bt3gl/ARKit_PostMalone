@@ -1,8 +1,6 @@
 //
 //  AppDelegate.swift
-//  ARSnake
 //
-
 
 import UIKit
 
