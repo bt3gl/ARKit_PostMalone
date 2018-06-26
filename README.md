@@ -1,4 +1,4 @@
-# 🐍 ARKit Snake 🐍
+# 🐍 AR Post Malone 🐍
 
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
@@ -7,10 +7,15 @@
 )](https://developer.apple.com/swift)
 
 
-I am learning ARKit and this is my fist quick demo of 3D drawing in [ARKit](https://developer.apple.com/arkit/) using [Metal](https://developer.apple.com/metal/) + [SceneKit](https://developer.apple.com/documentation/scenekit). This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
+* A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to display images to your enviroment. This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
 
-This app has been successfully tested on Xcode 9.4 + iOS 11.4.
 
+# Running
+
+
+* This app has been successfully tested on Xcode 9.4 + iOS 11.4.
+
+* When running it in your device, simply clique on where you want to see Post Malone. 😎
 
 
 ------
