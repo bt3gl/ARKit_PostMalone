@@ -27,7 +27,7 @@
 
 # Todo
 
-* Add a  3D post malone
+* Add 3D post malone
 * Add music
 * Add Post Malone interaction
 
