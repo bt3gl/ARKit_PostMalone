@@ -14,8 +14,6 @@
 		7A34E7431F54CF72000F7BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7411F54CF72000F7BCB /* Main.storyboard */; };
 		7A34E7451F54CF72000F7BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7441F54CF72000F7BCB /* Assets.xcassets */; };
 		7A34E7481F54CF72000F7BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7461F54CF72000F7BCB /* LaunchScreen.storyboard */; };
-		7A34E7531F54CF73000F7BCB /* ARPostMaloneBallonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E7521F54CF73000F7BCB /* ARPostMaloneBallonTests.swift */; };
-		7A34E75E1F54CF73000F7BCB /* ARPostMaloneBalloonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E75D1F54CF73000F7BCB /* ARPostMaloneBalloonUITests.swift */; };
 		7A34E76C1F54EB4E000F7BCB /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E76B1F54EB4E000F7BCB /* pop.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +45,7 @@
 		7A34E7471F54CF72000F7BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A34E7491F54CF72000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A34E74E1F54CF73000F7BCB /* Post Malone BalloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Post Malone BalloonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A34E7521F54CF73000F7BCB /* ARPostMaloneBallonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPostMaloneBallonTests.swift; sourceTree = "<group>"; };
-		7A34E7541F54CF73000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A34E7591F54CF73000F7BCB /* Post Malone BalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Post Malone BalloonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A34E75D1F54CF73000F7BCB /* ARPostMaloneBalloonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPostMaloneBalloonUITests.swift; sourceTree = "<group>"; };
-		7A34E75F1F54CF73000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A34E76B1F54EB4E000F7BCB /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				7A34E7381F54CF72000F7BCB /* PostMaloneBalloon */,
-				7A34E7511F54CF73000F7BCB /* PostMaloneBalloonTests */,
-				7A34E75C1F54CF73000F7BCB /* PostMaloneBalloonUITests */,
 				7A34E7371F54CF72000F7BCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,24 +106,6 @@
 				7A34E7491F54CF72000F7BCB /* Info.plist */,
 			);
 			path = PostMaloneBalloon;
-			sourceTree = "<group>";
-		};
-		7A34E7511F54CF73000F7BCB /* PostMaloneBalloonTests */ = {
-			isa = PBXGroup;
-			children = (
-				7A34E7521F54CF73000F7BCB /* ARPostMaloneBallonTests.swift */,
-				7A34E7541F54CF73000F7BCB /* Info.plist */,
-			);
-			path = PostMaloneBalloonTests;
-			sourceTree = "<group>";
-		};
-		7A34E75C1F54CF73000F7BCB /* PostMaloneBalloonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7A34E75D1F54CF73000F7BCB /* ARPostMaloneBalloonUITests.swift */,
-				7A34E75F1F54CF73000F7BCB /* Info.plist */,
-			);
-			path = PostMaloneBalloonUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A34E7531F54CF73000F7BCB /* ARPostMaloneBallonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A34E75E1F54CF73000F7BCB /* ARPostMaloneBalloonUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
