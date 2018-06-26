@@ -20,7 +20,7 @@
 
 
 * This app has been successfully tested on Xcode 9.4 + iOS 11.4.
-* When running it in your device, simply clique on where you want to see Post Malone. 😎
+* When running it in your device, simply click on where you want to see Post Malone. Then click again to explode it out! 😎
 
 
 ------
