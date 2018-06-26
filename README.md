@@ -23,15 +23,6 @@
 * When running it in your device, simply click on where you want to see Post Malone. Then click again to explode it out! 😎
 
 
-------
-
-# Todo
-
-* Add 3D post malone
-* Add music
-* Add Post Malone interaction
-
-
 
 ------
 
