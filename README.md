@@ -7,14 +7,14 @@
 )](https://developer.apple.com/swift)
 
 
-* A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to display images to your enviroment. This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
+* A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to add Post Malone to your reality. 
+* This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
 
 
 # Running
 
 
 * This app has been successfully tested on Xcode 9.4 + iOS 11.4.
-
 * When running it in your device, simply clique on where you want to see Post Malone. 😎
 
 
