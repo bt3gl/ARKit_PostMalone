@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ARBalloons.xcodeproj">
+      location = "self:/Users/mwahl/Desktop/ARBalloons-master/Post Malone Balloons.xcodeproj">
    </FileRef>
 </Workspace>

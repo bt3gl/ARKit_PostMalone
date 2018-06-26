@@ -14,7 +14,7 @@
 		7A34E7431F54CF72000F7BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7411F54CF72000F7BCB /* Main.storyboard */; };
 		7A34E7451F54CF72000F7BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7441F54CF72000F7BCB /* Assets.xcassets */; };
 		7A34E7481F54CF72000F7BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7461F54CF72000F7BCB /* LaunchScreen.storyboard */; };
-		7A34E7531F54CF73000F7BCB /* ARPostMaloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E7521F54CF73000F7BCB /* ARPostMaloneTests.swift */; };
+		7A34E7531F54CF73000F7BCB /* ARBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E7521F54CF73000F7BCB /* ARBalloonsTests.swift */; };
 		7A34E75E1F54CF73000F7BCB /* ARBalloonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E75D1F54CF73000F7BCB /* ARBalloonsUITests.swift */; };
 		7A34E76C1F54EB4E000F7BCB /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E76B1F54EB4E000F7BCB /* pop.mp3 */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A34E7361F54CF72000F7BCB /* ARBalloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBalloons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A34E7361F54CF72000F7BCB /* Post Malone Balloons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Post Malone Balloons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A34E7391F54CF72000F7BCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A34E73B1F54CF72000F7BCB /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		7A34E73D1F54CF72000F7BCB /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
@@ -46,10 +46,10 @@
 		7A34E7441F54CF72000F7BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A34E7471F54CF72000F7BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A34E7491F54CF72000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A34E74E1F54CF73000F7BCB /* ARBalloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARBalloonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A34E7521F54CF73000F7BCB /* ARPostMaloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPostMaloneTests.swift; sourceTree = "<group>"; };
+		7A34E74E1F54CF73000F7BCB /* Post Malone BalloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Post Malone BalloonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A34E7521F54CF73000F7BCB /* ARBalloonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBalloonsTests.swift; sourceTree = "<group>"; };
 		7A34E7541F54CF73000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A34E7591F54CF73000F7BCB /* ARBalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARBalloonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A34E7591F54CF73000F7BCB /* Post Malone BalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Post Malone BalloonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A34E75D1F54CF73000F7BCB /* ARBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBalloonsUITests.swift; sourceTree = "<group>"; };
 		7A34E75F1F54CF73000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A34E76B1F54EB4E000F7BCB /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		7A34E72D1F54CF72000F7BCB = {
 			isa = PBXGroup;
 			children = (
-				7A34E7381F54CF72000F7BCB /* ARPostMalone */,
-				7A34E7511F54CF73000F7BCB /* ARPostMalone */,
-				7A34E75C1F54CF73000F7BCB /* ARPostMaloneUITests */,
+				7A34E7381F54CF72000F7BCB /* PostMaloneBalloon */,
+				7A34E7511F54CF73000F7BCB /* PostMaloneBalloonTests */,
+				7A34E75C1F54CF73000F7BCB /* PostMaloneBalloonUITests */,
 				7A34E7371F54CF72000F7BCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 		7A34E7371F54CF72000F7BCB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7A34E7361F54CF72000F7BCB /* ARBalloons.app */,
-				7A34E74E1F54CF73000F7BCB /* ARBalloonsTests.xctest */,
-				7A34E7591F54CF73000F7BCB /* ARBalloonsUITests.xctest */,
+				7A34E7361F54CF72000F7BCB /* Post Malone Balloons.app */,
+				7A34E74E1F54CF73000F7BCB /* Post Malone BalloonsTests.xctest */,
+				7A34E7591F54CF73000F7BCB /* Post Malone BalloonsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7A34E7381F54CF72000F7BCB /* ARPostMalone */ = {
+		7A34E7381F54CF72000F7BCB /* PostMaloneBalloon */ = {
 			isa = PBXGroup;
 			children = (
 				7A34E76B1F54EB4E000F7BCB /* pop.mp3 */,
@@ -113,33 +113,33 @@
 				7A34E7461F54CF72000F7BCB /* LaunchScreen.storyboard */,
 				7A34E7491F54CF72000F7BCB /* Info.plist */,
 			);
-			path = ARPostMalone;
+			path = PostMaloneBalloon;
 			sourceTree = "<group>";
 		};
-		7A34E7511F54CF73000F7BCB /* ARPostMalone */ = {
+		7A34E7511F54CF73000F7BCB /* PostMaloneBalloonTests */ = {
 			isa = PBXGroup;
 			children = (
-				7A34E7521F54CF73000F7BCB /* ARPostMaloneTests.swift */,
+				7A34E7521F54CF73000F7BCB /* ARBalloonsTests.swift */,
 				7A34E7541F54CF73000F7BCB /* Info.plist */,
 			);
-			path = ARPostMalone;
+			path = PostMaloneBalloonTests;
 			sourceTree = "<group>";
 		};
-		7A34E75C1F54CF73000F7BCB /* ARPostMaloneUITests */ = {
+		7A34E75C1F54CF73000F7BCB /* PostMaloneBalloonUITests */ = {
 			isa = PBXGroup;
 			children = (
 				7A34E75D1F54CF73000F7BCB /* ARBalloonsUITests.swift */,
 				7A34E75F1F54CF73000F7BCB /* Info.plist */,
 			);
-			path = ARPostMaloneUITests;
+			path = PostMaloneBalloonUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A34E7351F54CF72000F7BCB /* ARBalloons */ = {
+		7A34E7351F54CF72000F7BCB /* Post Malone Balloons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A34E7621F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "ARBalloons" */;
+			buildConfigurationList = 7A34E7621F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "Post Malone Balloons" */;
 			buildPhases = (
 				7A34E7321F54CF72000F7BCB /* Sources */,
 				7A34E7331F54CF72000F7BCB /* Frameworks */,
@@ -149,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = ARBalloons;
+			name = "Post Malone Balloons";
 			productName = ARBalloons;
-			productReference = 7A34E7361F54CF72000F7BCB /* ARBalloons.app */;
+			productReference = 7A34E7361F54CF72000F7BCB /* Post Malone Balloons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7A34E74D1F54CF73000F7BCB /* ARBalloonsTests */ = {
+		7A34E74D1F54CF73000F7BCB /* Post Malone BalloonsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A34E7651F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "ARBalloonsTests" */;
+			buildConfigurationList = 7A34E7651F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "Post Malone BalloonsTests" */;
 			buildPhases = (
 				7A34E74A1F54CF73000F7BCB /* Sources */,
 				7A34E74B1F54CF73000F7BCB /* Frameworks */,
@@ -167,14 +167,14 @@
 			dependencies = (
 				7A34E7501F54CF73000F7BCB /* PBXTargetDependency */,
 			);
-			name = ARBalloonsTests;
+			name = "Post Malone BalloonsTests";
 			productName = ARBalloonsTests;
-			productReference = 7A34E74E1F54CF73000F7BCB /* ARBalloonsTests.xctest */;
+			productReference = 7A34E74E1F54CF73000F7BCB /* Post Malone BalloonsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7A34E7581F54CF73000F7BCB /* ARBalloonsUITests */ = {
+		7A34E7581F54CF73000F7BCB /* Post Malone BalloonsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A34E7681F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "ARBalloonsUITests" */;
+			buildConfigurationList = 7A34E7681F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "Post Malone BalloonsUITests" */;
 			buildPhases = (
 				7A34E7551F54CF73000F7BCB /* Sources */,
 				7A34E7561F54CF73000F7BCB /* Frameworks */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				7A34E75B1F54CF73000F7BCB /* PBXTargetDependency */,
 			);
-			name = ARBalloonsUITests;
+			name = "Post Malone BalloonsUITests";
 			productName = ARBalloonsUITests;
-			productReference = 7A34E7591F54CF73000F7BCB /* ARBalloonsUITests.xctest */;
+			productReference = 7A34E7591F54CF73000F7BCB /* Post Malone BalloonsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +198,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "Marla Na";
+				ORGANIZATIONNAME = "Mia Steinkirch";
 				TargetAttributes = {
 					7A34E7351F54CF72000F7BCB = {
 						CreatedOnToolsVersion = 9.0;
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7A34E7311F54CF72000F7BCB /* Build configuration list for PBXProject "ARPostMalone" */;
+			buildConfigurationList = 7A34E7311F54CF72000F7BCB /* Build configuration list for PBXProject "Post Malone Balloons" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7A34E7351F54CF72000F7BCB /* ARBalloons */,
-				7A34E74D1F54CF73000F7BCB /* ARBalloonsTests */,
-				7A34E7581F54CF73000F7BCB /* ARBalloonsUITests */,
+				7A34E7351F54CF72000F7BCB /* Post Malone Balloons */,
+				7A34E74D1F54CF73000F7BCB /* Post Malone BalloonsTests */,
+				7A34E7581F54CF73000F7BCB /* Post Malone BalloonsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A34E7531F54CF73000F7BCB /* ARPostMaloneTests.swift in Sources */,
+				7A34E7531F54CF73000F7BCB /* ARBalloonsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		7A34E7501F54CF73000F7BCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7A34E7351F54CF72000F7BCB /* ARBalloons */;
+			target = 7A34E7351F54CF72000F7BCB /* Post Malone Balloons */;
 			targetProxy = 7A34E74F1F54CF73000F7BCB /* PBXContainerItemProxy */;
 		};
 		7A34E75B1F54CF73000F7BCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7A34E7351F54CF72000F7BCB /* ARBalloons */;
+			target = 7A34E7351F54CF72000F7BCB /* Post Malone Balloons */;
 			targetProxy = 7A34E75A1F54CF73000F7BCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -374,6 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,6 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -438,10 +440,11 @@
 		7A34E7631F54CF73000F7BCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 856PQR97US;
-				INFOPLIST_FILE = "$(SRCROOT)/ARPostMaloneUITests/Info.plist";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LS7YVKLABP;
+				INFOPLIST_FILE = "$(SRCROOT)/PostMaloneBalloon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARBalloonsBt3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARBalloonsZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,10 +454,11 @@
 		7A34E7641F54CF73000F7BCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 856PQR97US;
-				INFOPLIST_FILE = "$(SRCROOT)/ARPostMaloneUITests/Info.plist";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LS7YVKLABP;
+				INFOPLIST_FILE = "$(SRCROOT)/PostMaloneBalloon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARBalloonsBt3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARBalloonsZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,7 +477,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARBalloons.app/ARBalloons";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Post Malone Balloons.app/Post Malone Balloons";
 			};
 			name = Debug;
 		};
@@ -489,7 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARBalloons.app/ARBalloons";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Post Malone Balloons.app/Post Malone Balloons";
 			};
 			name = Release;
 		};
@@ -526,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A34E7311F54CF72000F7BCB /* Build configuration list for PBXProject "ARPostMalone" */ = {
+		7A34E7311F54CF72000F7BCB /* Build configuration list for PBXProject "Post Malone Balloons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A34E7601F54CF73000F7BCB /* Debug */,
@@ -535,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A34E7621F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "ARBalloons" */ = {
+		7A34E7621F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "Post Malone Balloons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A34E7631F54CF73000F7BCB /* Debug */,
@@ -544,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A34E7651F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "ARBalloonsTests" */ = {
+		7A34E7651F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "Post Malone BalloonsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A34E7661F54CF73000F7BCB /* Debug */,
@@ -553,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A34E7681F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "ARBalloonsUITests" */ = {
+		7A34E7681F54CF73000F7BCB /* Build configuration list for PBXNativeTarget "Post Malone BalloonsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A34E7691F54CF73000F7BCB /* Debug */,
