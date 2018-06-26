@@ -11,6 +11,9 @@
 * This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
 
 
+![](/screenshots/post_1.PNG)
+
+
 # Running
 
 
