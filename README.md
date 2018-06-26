@@ -12,9 +12,12 @@
 
 
 
-<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200">
+<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="300">
 
-(https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG =100x20) ![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG =100x20)
+<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="300">
+
+<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG" width="300">
+
 
 
 # Running
