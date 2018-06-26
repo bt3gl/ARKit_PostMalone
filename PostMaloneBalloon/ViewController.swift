@@ -1,9 +1,8 @@
 //
 //  ViewController.swift
-//  ARBalloons
+//  Post Malone Balloons
 //
-//  Created by Marla Na on 29.08.17.
-//  Copyright © 2017 Marla Na. All rights reserved.
+//  Mia Steinkirch - Based on game by Marla Na
 //
 
 import UIKit
