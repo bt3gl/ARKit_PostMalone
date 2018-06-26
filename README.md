@@ -12,11 +12,7 @@
 
 
 
-<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200">
-
-<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="200">
-
-<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG" width="200">
+<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG" width="200">
 
 
 
