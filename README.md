@@ -11,7 +11,7 @@
 * This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
 
 
-![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg) ![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG) ![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG)
+![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg =100x20) ![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG =100x20) ![](https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG =100x20)
 
 
 # Running
