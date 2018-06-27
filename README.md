@@ -8,8 +8,8 @@
 
 
 * A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to add Post Malone to your reality. 
-* This exercise is based on [this code](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
-
+* This exercise is based on [Apple's examples](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
+* Wanna learn more? Read [my blog post](http://bt3gl.github.io/).
 
 
 <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG" width="200">
