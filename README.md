@@ -54,7 +54,7 @@ Contains two [story board files](https://www.raywenderlich.com/160521/storyboard
 
 ### `Scene.swift`
 
-This is where the anchor is created, the class that manages the Sprite scene (Scene.sks).  This module is where you call the class `Scene` to control how the App is operating with the scene. Rendering brings tracking and scene understanding together with your content.
+Anchors are 3D points that correspond real world features that ARKit detects. This class is where the anchor is created, and also manages the Sprite scene (Scene.sks). This module is where you call the class `Scene` to control how the App is operating with the scene. Rendering brings tracking and scene understanding together with your content.
 
 For our App, we are:
 
