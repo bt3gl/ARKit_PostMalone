@@ -49,7 +49,7 @@ Contains two [story board files](https://www.raywenderlich.com/160521/storyboard
 
 #### `Scene.swift`
 
-This module is where you call the class `Scene` to control what how the App is operating with the scene. Here we are explicitly using [ARKit](https://developer.apple.com/arkit/) and [SpriteKit](https://developer.apple.com/documentation/spriteKit).
+This module is where you call the class `Scene` to control what how the App is operating with the scene. Here we are explicitly using [ARKit](https://developer.apple.com/arkit/) and [SpriteKit](https://developer.apple.com/documentation/spriteKit). Rendering brings tracking and scene understanding together with your content.
 
 For our App, we are:
 
