@@ -275,6 +275,19 @@ This is where we call the class `AppDelegate`, which responds for `UIApplication
 * [/r/HTC_Vive](https://www.reddit.com/r/HTC_Vive).
 * [/r/learnVRdev](https://www.reddit.com/r/learnVRdev/).
 
+### Some Terminology
+
+* **Field of view: measured in degrees, is the extent of the observable world that is seen at any given moment (humans have a FOV of around 180°, but most HMDs offer between 50 and 110°).
+
+* **Latency**: In VR, a 20 millisecond latency is considered low and acceptable for a comfortable experience.
+
+* **Haptics**: recreate the sense of touch by applying forces, vibrations, or motions to the user, through feedback devices (example, vibrating game controllers).
+
+* **Stitching**: the process of combining multiple video sources with overlapping fields of view to produce a fully immersive 360°. 
+
+* **Visual Inertial Odometry**: ARKit analyzes the phone camera and motion data in order to keep track of the world around i
+ARSession object that manages the motion tracking and image processing.
+
 
 
 ---------
