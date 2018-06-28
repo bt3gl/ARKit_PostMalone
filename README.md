@@ -24,7 +24,8 @@ A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to add Po
 
 ## Undestanding the SourceCode
 
-#### `Info.plist`
+
+### `Info.plist`
 
 An information property list file is a XML file that contains essential configuration information for a bundled executable. Example of the information you want to add is:
 
@@ -33,11 +34,11 @@ An information property list file is a XML file that contains essential configur
 * Frameworks you need (`<key>UIRequiredDeviceCapabilities</key>` with `<string>armv7</string>` and `<string>arkit</string>`).
 
 
-#### `Assets.xcassets` directory
+### `Assets.xcassets` directory
 
 This is where you place assets such as the images used in your App (Post Malone head) and icons. A file `Content.json` is placed inside every directory to describe the assets.
 
-#### `Base.lproj` directory
+### `Base.lproj` directory
 
 Contains two [story board files](https://www.raywenderlich.com/160521/storyboards-tutorial-ios-11-part-1):
 
@@ -46,9 +47,9 @@ Contains two [story board files](https://www.raywenderlich.com/160521/storyboard
 
 
 
-#### `Scene.swift`
+### `Scene.swift`
 
-This module is where you call the class `Scene` to control  how the App is operating with the scene. Here we are  using [ARKit](https://developer.apple.com/arkit/) and [SpriteKit](https://developer.apple.com/documentation/spriteKit). Rendering brings tracking and scene understanding together with your content.
+This is where the anchor is created, the class that manages the Sprite scene (Scene.sks).  This module is where you call the class `Scene` to control how the App is operating with the scene. Rendering brings tracking and scene understanding together with your content.
 
 For our App, we are:
 
@@ -56,11 +57,12 @@ For our App, we are:
 * The sequence of movements is defined by `let sequence = SKAction.sequence([popSound, moveDown, moveDownFloating, moveToBottom])`.
 * When you touch the scene, a Post Malone Balloon head appears and starts to behave as a balloon (`moveDownFloating = ((arc4random() % 2)==0) ? moveLeftDown : moveRightDown`).
 * The balloon either pops (`let popSound = SKAction.playSoundFileNamed("pop", waitForCompletion: false)`) or fades after a second (`fadeOut = SKAction.fadeOut(withDuration: 1.0)`).
+* An ARAnchor uses a 4×4 matrix represents the combined position, rotation or orientation, and scale of an object in three-dimensional space.
 
 
-#### `ViewController.swift`
+### `ViewController.swift`
 
-The ViewController class inherents from `ARSKViewDelegate` so that we can create a `sceneView` variable. This class has methods for:
+This view is managed by the class ViewController, which inherents from `ARSKViewDelegate` so that we can create a `sceneView` variable. This class has methods for:
 
 * Views
     - Scaling and placing the view.
@@ -74,7 +76,7 @@ The ViewController class inherents from `ARSKViewDelegate` so that we can create
 
 
 
-#### `AppDelegate.swift`
+### `AppDelegate.swift`
 
 This is where we call the class `AppDelegate`, which responds for `UIApplicationMain`. In this class we create a variable that will work as the window UI and we have UI methods for:
 
