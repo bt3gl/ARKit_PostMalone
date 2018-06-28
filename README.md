@@ -7,7 +7,12 @@
 )](https://developer.apple.com/swift)
 
 
-A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to add Post Malone to your reality, based on [Apple's examples](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience). ARKit is a framework that provides you high level classes for **tracking**, **scene understanding** and **rendering**. This app runs an ARKit world tracking session with content displayed in a SceneKit view. 
+*Augmented reality (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s camera in a way that makes those elements appear to inhabit the real world.*
+
+
+I am going to show how neat is to write an AR iOS application with [ARKit](https://developer.apple.com/arkit/), a framework that provides you high level classes for **tracking**, **scene understanding** and **rendering**. More specifically, ARKit is a session based framework. This means that everything will happen in a concrete session. The session relates the virtual objects with the real world by means of the Tracking.
+
+This app runs an ARKit world tracking session with content displayed in a [SpriteKit](https://developer.apple.com/documentation/spriteKit) 2D view. Every session has a scene that will render the virtual objects in the real world, accessed by means of the iOS device sensors.
 
 
 <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG" width="200">
