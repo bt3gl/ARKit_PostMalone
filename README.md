@@ -268,7 +268,6 @@ This is where we call the class `AppDelegate`, which responds for `UIApplication
 * [/r/Singularitarianism](https://www.reddit.com).
 * [/r/HTC_Vive](https://www.reddit.com/r/HTC_Vive).
 * [/r/learnVRdev](https://www.reddit.com/r/learnVRdev/).
-* [/r/SethGodin](https://www.reddit.com/r/SethGodin)
 
 
 
