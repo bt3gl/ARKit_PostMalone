@@ -277,7 +277,7 @@ This is where we call the class `AppDelegate`, which responds for `UIApplication
 
 ### Some Terminology
 
-* **Field of view: measured in degrees, is the extent of the observable world that is seen at any given moment (humans have a FOV of around 180°, but most HMDs offer between 50 and 110°).
+* **Field of view**: measured in degrees, is the extent of the observable world that is seen at any given moment (humans have a FOV of around 180°, but most HMDs offer between 50 and 110°).
 
 * **Latency**: In VR, a 20 millisecond latency is considered low and acceptable for a comfortable experience.
 
