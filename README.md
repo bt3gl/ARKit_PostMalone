@@ -62,7 +62,7 @@ For our App, we are:
 * The sequence of movements is defined by `let sequence = SKAction.sequence([popSound, moveDown, moveDownFloating, moveToBottom])`.
 * When you touch the scene, a Post Malone Balloon head appears and starts to behave as a balloon (`moveDownFloating = ((arc4random() % 2)==0) ? moveLeftDown : moveRightDown`).
 * The balloon either pops (`let popSound = SKAction.playSoundFileNamed("pop", waitForCompletion: false)`) or fades after a second (`fadeOut = SKAction.fadeOut(withDuration: 1.0)`).
-* An ARAnchor uses a 4×4 matrix represents the combined position, rotation or orientation, and scale of an object in three-dimensional space.
+* An ARAnchor uses a 4×4 matrix represents the combined position, rotation or orientation, and scale of an object in three-dimensional space (as in `var translation = matrix_identity_float4x4`).
 
 
 ### `ViewController.swift`
