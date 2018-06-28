@@ -45,7 +45,7 @@ This is where you place assets such as the images used in your App (Post Malone 
 
 ### `Base.lproj` directory
 
-Contains two [story board files](https://www.raywenderlich.com/160521/storyboards-tutorial-ios-11-part-1):
+Contains two [story board files](https://www.raywenderlich.com/160521/storyboards-tutorial-ios-11-part-1), that were borrowed from [this example]().:
 
 * `LaunchScreen.storyboard`.
 * `Main.storyboard`.
