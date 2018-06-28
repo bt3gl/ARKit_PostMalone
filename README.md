@@ -7,7 +7,7 @@
 )](https://developer.apple.com/swift)
 
 
-A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to add Post Malone to your reality, based on [Apple's examples](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience).
+A fist quick demo of using [ARKit](https://developer.apple.com/arkit/) to add Post Malone to your reality, based on [Apple's examples](https://developer.apple.com/documentation/arkit/building_your_first_ar_experience). ARKit is a framework that provides you high level classes for **tracking**, **scene understanding** and **rendering**.
 
 
 
