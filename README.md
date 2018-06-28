@@ -176,8 +176,9 @@ This is where we call the class `AppDelegate`, which responds for `UIApplication
 * [Unity](https://unity3d.com/): uses C# as its primary programming language.
 * [Unreal](https://www.unrealengine.com/en-US/vr): uses C++ and a node-based language called Blueprints Visual Scripting.
 
-### Web Development
+### Development
 
+* [React 260](https://facebook.github.io/react-360/).
 * [WebVR](https://webvr.info/): open standard with a JavaScript API that makes it possible to experience VR in your browser.
 * [A-frame](https://aframe.io/): framework for building virtual reality experiences with HTML.
 * [React VR](https://facebook.github.io/react-360/): library developed by Facebook based on React and React Native.
