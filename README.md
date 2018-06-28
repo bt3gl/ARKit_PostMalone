@@ -150,8 +150,6 @@ This is where we call the class `AppDelegate`, which responds for `UIApplication
 * [Creating an Immersive AR Experience with Audio](https://developer.apple.com/documentation/arkit/creating_an_immersive_ar_experience_with_audio).
 * [Using Vision in Real Time with ARKit](https://developer.apple.com/documentation/arkit/using_vision_in_real_time_with_arkit).
 * [Viro code samples](https://github.com/viromedia/viro).
-* [AR Tetris](https://github.com/exyte/ARTetris).
-* [AR Balloon](https://github.com/nagam11/ARBalloons).
 * [ARKit Sampler](https://github.com/shu223/ARKit-Sampler).
 
 --------
