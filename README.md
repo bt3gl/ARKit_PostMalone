@@ -10,7 +10,7 @@
 *Augmented reality (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s camera in a way that makes those elements appear to inhabit the real world.*
 
 
-I am going to show how neat is to write an AR iOS application with [ARKit](https://developer.apple.com/arkit/), a framework that provides you high level classes for **tracking**, **scene understanding** and **rendering**. More specifically, ARKit is a session based framework. This means that everything will happen in a concrete session. The session relates the virtual objects with the real world by means of the Tracking.
+I am going to show how neat is to write an AR iOS application with [ARKit](https://developer.apple.com/arkit/), a framework that provides you high-level classes for **tracking**, **scene understanding** and **rendering**. More specifically, ARKit is a session based framework. This means that everything will happen in a concrete session. The session relates the virtual objects with the real world by means of the Tracking.
 
 This app runs an ARKit world tracking session with content displayed in a [SpriteKit](https://developer.apple.com/documentation/spriteKit) 2D view. Every session has a scene that will render the virtual objects in the real world, accessed by means of the iOS device sensors.
 
@@ -29,7 +29,7 @@ This app is based on the code [ARBalloons](https://github.com/nagam11/ARBalloons
 
 
 
-## Undestanding the SourceCode
+## Understanding the Source Code
 
 
 ### `Info.plist`
@@ -56,7 +56,7 @@ Contains two [story board files](https://www.raywenderlich.com/160521/storyboard
 
 ### `Scene.swift`
 
-Anchors are 3D points that correspond real world features that ARKit detects. Anchors are created in this class, together with the Sprite scene (Scene.sks). The class `Scene` controls how the App is operating within the scenes. Rendering brings tracking and scene understanding together with your content.
+Anchors are 3D points that correspond to real-world features that ARKit detects. Anchors are created in this class, together with the Sprite scene (Scene.sks). The class `Scene` controls how the App is operating within the scenes. Rendering brings tracking and scene understanding together with your content.
 
 For our App, we are:
 
@@ -69,7 +69,7 @@ For our App, we are:
 
 ### `ViewController.swift`
 
-This view is managed by the class ViewController, which inherents from `ARSKViewDelegate` so that we can create a `sceneView` variable. This class has methods for:
+This view is managed by the class ViewController, which inherits from `ARSKViewDelegate` so that we can create a `sceneView` variable. This class has methods for:
 
 * Views
     - Scaling and placing the view.
@@ -85,10 +85,10 @@ This view is managed by the class ViewController, which inherents from `ARSKView
 
 ### `AppDelegate.swift`
 
-This is where we call the class `AppDelegate`, which responds for `UIApplicationMain`. In this class we create a variable that will work as the window UI and we have UI methods for:
+This is where we call the class `AppDelegate`, which answers for `UIApplicationMain`. In this class, we create a variable that will work as the window UI and we have UI methods for:
 
 * See if the application is about to move from active to inactive state (for example, pause ongoing tasks).
-* Release shared resources and  save user data.
+* Release shared resources and save user data.
 * Change from the background to the active state.
 * Restart any tasks that were paused while the application was inactive.
 * Termination actions for when the application is about to terminate (for example, to save data if appropriate).
