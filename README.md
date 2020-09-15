@@ -17,8 +17,7 @@ This app runs an ARKit world tracking session with content displayed in a [Sprit
 This app is based on the code [ARBalloons](https://github.com/nagam11/ARBalloons).
 
 
-<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_3.PNG" width="200">
-
+<img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_1.jpeg" width="200"> <img src="https://github.com/bt3gl/AR_PostMalone/blob/master/screenshots/post_2.PNG" width="200"> 
 
 
 ## Running
